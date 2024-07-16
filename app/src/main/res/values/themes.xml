@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoddApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.FoddApp" parent="Base.Theme.FoddApp" />
+    <style name="myButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#94B9FF</item>
+        <item name="colorButtonNormal">#94B9FF</item>
+    </style>
+    <style name="AddButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#94B9FF</item>
+        <item name="colorButtonNormal">@color/lightgreenn</item>
+    </style>
+    <style name="SubmitButtonTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">#94B9FF</item>
+        <item name="colorButtonNormal">@color/lightgreenn</item>
+    </style>
+
+    <style name="AppTheme.Menu" parent="Theme.AppCompat.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fillColor">@color/lightgreenn</item>
+        <item name="android:textColor">@color/skyblue</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:paddingVertical">8dp</item>
+    </style>
+
+    <style name="BottomNavTextStyle">
+        <item name="android:textSize">50sp</item>
+        <item name="android:fontFamily">@font/studlyregular</item>
+        <!-- Change the text size as needed -->
+    </style>
+
+</resources>

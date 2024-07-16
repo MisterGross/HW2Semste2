@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "643213063903",
+    "firebase_url": "https://crackertrackerapp-default-rtdb.firebaseio.com",
+    "project_id": "crackertrackerapp",
+    "storage_bucket": "crackertrackerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643213063903:android:0b490542e7e01184735b6a",
+        "android_client_info": {
+          "package_name": "com.tnc.crackertracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8j8zS7iEX-8sT5lr8Azy9s-SPuucoxgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

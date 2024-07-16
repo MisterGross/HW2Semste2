@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="BottomNavItemText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">20sp</item> <!-- Adjust the text size here -->
+        <item name="android:textColor">@color/bottom_nav_text_colors</item> <!-- Use your color resource -->
+        <item name="android:fontFamily">@font/studlyregular</item> <!-- Use your color resource -->
+    </style>
+
+
+
+</resources>

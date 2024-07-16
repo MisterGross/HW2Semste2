@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="com.tnc.crackertracker.UI.MainActivity">
+
+    <ImageView
+        android:id="@+id/upper_logo"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crackertrackerlogo" />
+
+
+    <View
+        app:layout_constraintBottom_toBottomOf="@+id/upper_logo"
+        android:id="@+id/UpperLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp"
+        android:background="#CDFFD8"
+        app:layout_constraintBottom_toTopOf="@+id/select_food_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upper_logo" />
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="@+id/UpperLine"
+        android:id="@+id/select_food_label"
+        android:layout_width="146dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/studlyregular"
+        android:text="@string/select_food"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpperLine" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="210dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/add_button_background"
+        android:fontFamily="@font/studlyregular"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="@+id/Food_Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gram_label"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/add_button"
+        android:id="@+id/selected_foods_title"
+        android:layout_width="130dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/studlyregular"
+        android:text="@string/selected_foods"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_button"
+        app:layout_constraintBottom_toTopOf="@+id/selected_foods_recyclerview"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+      />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selected_foods_recyclerview"
+        android:layout_width="329dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selected_foods_title"
+        app:layout_constraintBottom_toTopOf="@+id/BottomLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_foods_title"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <View
+        android:id="@+id/BottomLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#95BBFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="797dp" />
+
+    <TextView
+        android:id="@+id/Food_Input"
+        android:layout_width="207dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextroundedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_food_label" />
+
+    <TextView
+        android:id="@+id/Gram_label"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="@+id/Food_Input"
+        android:background="@drawable/edittextroundedback"
+        android:fontFamily="@font/studlyregular"
+        android:gravity="center"
+        android:text="Gr"
+        android:textColor="#3F51B5"
+        app:layout_constraintStart_toEndOf="@+id/Food_Input"
+        app:layout_constraintTop_toBottomOf="@+id/select_food_label" />
+
+    <TextView
+        android:id="@+id/Gram_input"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/edittextroundedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Gram_label"
+        app:layout_constraintTop_toBottomOf="@+id/select_food_label" />
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="@+id/selected_foods_title"
+        android:id="@+id/submint_button"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/add_button_background"
+        android:fontFamily="@font/studlyregular"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/BottomLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_foods_recyclerview"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_bar"
+        android:layout_width="365dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#C2F2DF"
+        app:itemIconSize="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BottomLine"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
